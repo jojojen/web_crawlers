@@ -13,11 +13,6 @@ library(XML)      # readHTMLTable
 library(dplyr)    # data manipulation & pipe line
 library(stringr)  # str_pad
 
-# set working directory
-mainDir <- "/Users/jen/Documents/web_crawler"
-ifelse(!dir.exists(file.path(mainDir)), dir.create(file.path(mainDir)), "folder exists")
-setwd(mainDir)
-
 # define functions
 ## get Taiwan stocks monthly data (Stock Exchange Market only)
 getStockData <- function(yyyy, mm, scode){
